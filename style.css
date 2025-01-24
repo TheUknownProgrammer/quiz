@@ -1,0 +1,114 @@
+body {
+    font-family: calibri;
+}
+
+button {
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.25px solid black;
+    border-radius: 2px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.4);
+}
+label {
+    text-transform: capitalize;
+    user-select: none;
+}
+
+#question_El {
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+#end_screen,
+.quiz {
+    display: none;
+}
+
+.quiz ul {
+    display: block;
+    list-style: inside;
+    text-align: center;
+    list-style-type: decimal;
+    margin: 0;
+}
+
+#correct_answers {
+    font-weight: bold;
+}
+
+#user_answers {
+    padding: 0;
+    text-transform: capitalize;
+}
+
+h2 {
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+#submit_quizBtn {
+    text-transform: capitalize;
+    background-color: dodgerblue;
+    color: white;
+}
+
+#submit_quizBtn:active {
+    color: rgba(238, 238, 238, 0.9);
+}
+
+#start_menu {
+    padding-bottom: 30px;
+}
+
+#start_game {
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: absolute;
+    border: 0;
+    border-top: 1px solid black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#start_game:hover {
+    background-color: rgb(157, 62, 246);
+}
+
+#start_menu h2 {
+    margin-bottom: 20px;
+}
+
+#question_number {
+    position: absolute;
+    bottom: 0;
+    background-color: royalblue;
+    color: white;
+    padding: 5px;
+    border: 0.5px dotted black;
+}
+
+#back-menu {
+    background-color: goldenrod;
+    color: white;
+    text-transform: capitalize;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2.25px rgb(10, 10, 10);
+}

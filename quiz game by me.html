@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <meta name="author" content="TheUnknownProgrammer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="start_menu">
+        <h2>welcome to general knowledge quiz</h2>
+        <h3>select the topic</h3>
+        <div id="radio_choice"></div>
+        <button id="start_game">start game</button>
+      </div>
+
+      <div class="quiz">
+        <h3 id="question_El"></h3>
+        <ul>
+          <li>
+            <input
+              type="radio"
+              id="select_1"
+              name="quiz_radio"
+              data-select="0"
+            />
+            <label for="select_1">answer1</label>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              id="select_2"
+              name="quiz_radio"
+              data-select="1"
+            />
+            <label for="select_2">answer2</label>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              id="select_3"
+              name="quiz_radio"
+              data-select="2"
+            />
+            <label for="select_3">answer3</label>
+          </li>
+
+          <li>
+            <input
+              type="radio"
+              id="select_4"
+              name="quiz_radio"
+              data-select="3"
+            />
+            <label for="select_4">answer4</label>
+          </li>
+        </ul>
+        <br />
+        <button id="submit_quizBtn">submit</button>
+        <p id="question_number"><span>1</span>/<span></span></p>
+      </div>
+
+      <div id="end_screen">
+        <h2>Your Score Precentage Is <span id="score_precent"></span></h2>
+        <p id="result_game"></p>
+        <button id="back-menu">back to menu screen</button>
+        <br />
+        <hr />
+        <h3>Your Answers:</h3>
+        <div id="user_answers"></div>
+      </div>
+    </div>
+  </body>
+</html>
